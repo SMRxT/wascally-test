@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.0.0",
-    "wascally": "^0.2.10"
-  }
+    "wascally": "^0.2.10",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
